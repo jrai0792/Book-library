@@ -15,9 +15,7 @@ function addBookToLibrary(e) {
   console.log(myLibrary);
   displayBook(book);
   //Clearing the form input data after submit
-  document.getElementById("title").value = "";
-  document.getElementById("author").value = "";
-  document.getElementById("pages").value = "";
+  document.getElementById("form").reset();
 }
 
 //Displaying book to the UI
@@ -35,5 +33,3 @@ function displayBook(book) {
 }
 
 document.getElementById("form").addEventListener('submit', addBookToLibrary);
-
-
