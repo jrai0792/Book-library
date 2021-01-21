@@ -11,16 +11,21 @@
   <header></header>
   <main>
     <h1 class="font-wieght-bolder text-center my-5">JS Book Library</h1>
+    <button type="button" class="btn btn-primary" id = 'add-book'>Add book</button>
     <div class="container border">
-      <h4 class="text-center">Add Book</h4>
       <form id="form" class="text-center">
+        <h4 class="text-center">Add Book</h4>
         <label for="title" class="mt-5 mx-5">Title:</label>
         <input type="text" id="title" name="title" class="mx-5 mb-4" required=true><br>
         <label for="author" class="mx-5">Author:</label>
         <input type="text" id="author" name="author" class="mx-5 mb-4" required=true><br>
           <label for="pages" class="mx-5">Pages:</label>
         <input type="number" id="pages" name="pages" class="mx-5 mb-4" required=true><br>
-        <input type="submit" id="submit" name="submit" class="mx-5 mb-4">
+        <label for="read">Read</label>
+        <input type = 'radio' id = 'read' name = 'read' required=true>
+        <label for="unread">Not Read</label>
+        <input type = 'radio' id = 'unread' name = 'read' required=true><br>
+        <input type="submit" id="submit-form" name="submit" class="mx-5 mb-4">
       </form>
     </div>
     <div class="Books border">

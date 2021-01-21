@@ -9,11 +9,10 @@ function Book() {
 
 // Adding book
 function addBookToLibrary(e) {
-  e.preventDefault();
-  const book = new Book(title, author, pages);
+  const book = new Book();
   myLibrary.push(book);
-  console.log(myLibrary);
   displayBook(book);
+  e.preventDefault();
   //Clearing the form input data after submit
   document.getElementById("form").reset();
 }
@@ -31,5 +30,12 @@ function displayBook(book) {
     `
     list.appendChild(row);
 }
-
-document.getElementById("form").addEventListener('submit', addBookToLibrary);
+function showForm(e) {
+  document.getElementById('form').style.display = 'block';
+}
+function hideForm(e) {
+  document.getElementById('form').style.display = 'none';
+}
+document.getElementById('add-book').addEventListener('click', showForm);
+document.getElementById('form').addEventListener('submit', addBookToLibrary);
+document.getElementById('submit-form').addEventListener('click', hideForm);
