@@ -33,8 +33,7 @@ function displayBook(book) {
     <td class="mx-4">${book.author}</td>
     <td class="mx-4">${book.pages}</td>
     <td class="mx-4">${book.read}</td>
-    <td><a href="#" class="btn btn-danger mx-4" id="statusYes">Yes</a></td>
-    <td><a href="#" class="btn btn-danger" id="statusNo">No</a></td>
+    <td><a href="#" class="btn btn-danger mx-4" id="statusYes">${updateReadBtn(book.read)}</a></td>
     <td><a href="#" class="btn btn-danger mx-4 delete">Remove</a></td>
     `
     list.appendChild(row);
@@ -65,8 +64,9 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 
 //Update read status
 function updateReadBtn(ele) {
-  if(){
-    
+  if(ele == 'Yes'){
+    return 'No';
   }
+  return 'Yes';
 }
 
