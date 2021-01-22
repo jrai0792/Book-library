@@ -32,7 +32,7 @@ function displayBook(book) {
     <td class="mx-4">${book.title}</td>
     <td class="mx-4">${book.author}</td>
     <td class="mx-4">${book.pages}</td>
-    <td><a href="#" class="btn btn-danger mx-4" id="statusYes">${book.read}</a></td>
+    <td><a href="#" class="btn btn-primary mx-4" id="statusYes">${book.read}</a></td>
     <td><a href="#" class="btn btn-danger mx-4 delete">Remove</a></td>
     `
     list.appendChild(row);
