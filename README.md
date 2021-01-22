@@ -1,10 +1,20 @@
 # Book Library
 
-> In this project, we have build a book lirary application where user can add book, remove book and update the read status of book.
+> In this project, we have built a book library application where user can add book, remove book and update the read status of book.
 
 ![screenshot](./screenshot.png)
 
-Additional description about the project and its features.
+## Set Up Project Locally
+
+**To get this project set up on your local machine, follow these simple steps:**
+
+**Step 1**<br>
+Navigate through the local folder where you want to clone the repository and run<br>
+`git@github.com:jrai0792/Book-library.git` to clone the repo to your local folder.<br>
+or with https<br>
+`https://github.com/jrai0792/Book-library.git`.<br>
+**Step 2**<br>
+Run `cd Book-library`<br>
 
 ## Built With
 
@@ -26,15 +36,15 @@ Additional description about the project and its features.
 
 👤 **Sajjad Ahmad**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/SajjadAhmad14)
+- Twitter: [@twitterhandle](https://twitter.com/Sajjad_Ahmad14)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sajjadahmad14)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/jrai0792/Book-library/issues).
 
 ## Show your support
 
