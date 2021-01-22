@@ -46,7 +46,7 @@ function hideForm() {
 }
 document.getElementById('add-book').addEventListener('click', showForm);
 document.getElementById('form').addEventListener('submit', addBookToLibrary);
-document.getElementById('submit-form').addEventListener('submit', hideForm);
+// document.getElementById('submit-form').addEventListener('submit', hideForm);
 
 // delete a book
 
