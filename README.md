@@ -28,6 +28,8 @@ Run `cd Book-library`<br>
 👤 **Jyoti Rai**
 
 - GitHub: [@githubhandle](https://github.com/jrai0792)
+- LinkedIn: [@linkedin](https://www.linkedin.com/in/rai-jyoti)
+- Twitter: [@twitter](https://twitter.com/jyotirai0792)
 
 👤 **Sajjad Ahmad**
 

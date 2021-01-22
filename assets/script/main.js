@@ -1,14 +1,11 @@
 const myLibrary = [];
 
 // Book constructor
-function Book() {
-  this.title = document.getElementById('title').value;
-  this.author = document.getElementById('author').value;
-  this.pages = document.getElementById('pages').value;
-  this.read = (function () {
-    if (document.getElementById('yes').checked) return document.getElementById('yes').value;
-    return document.getElementById('no').value;
-  }());
+function Book(title, author, pages, read) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
 }
 
 // Displaying book to the UI
@@ -28,10 +25,18 @@ function displayBook(book) {
 
 // Adding book
 function addBookToLibrary(e) {
-  const book = new Book();
+  let title = document.getElementById('title').value;
+  let author = document.getElementById('author').value;
+  let pages = document.getElementById('pages').value;
+  let read = (function () {
+    if (document.getElementById('yes').checked) return document.getElementById('yes').value;
+    return document.getElementById('no').value;
+  }());
+  const book = new Book(title, author, pages, read);
   myLibrary.push(book);
   displayBook(book);
   e.preventDefault();
+
   // Clearing the form input data after submit
   document.getElementById('form').reset();
 }
@@ -41,12 +46,20 @@ function addBookToLibrary(e) {
 function showForm() {
   document.getElementById('form').style.display = 'block';
 }
+let hideform = false;
 function hideForm() {
-  document.getElementById('form').style.display = 'none';
+  debugger
+  hideform = !hideform;
+  if(hideform){
+    document.getElementById('formdiv').style.display = 'none';
+  }else
+  {
+    document.getElementById('formdiv').style.display = 'display';
+  }
 }
 document.getElementById('add-book').addEventListener('click', showForm);
 document.getElementById('form').addEventListener('submit', addBookToLibrary);
-// document.getElementById('submit-form').addEventListener('submit', hideForm);
+document.getElementById('submit-form').addEventListener('submit', hideForm);
 
 // delete a book
 
