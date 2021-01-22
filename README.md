@@ -24,7 +24,7 @@ Additional description about the project and its features.
 
 - GitHub: [@githubhandle](https://github.com/jrai0792)
 
-👤 **Author2**
+👤 **Sajjad Ahmad**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
