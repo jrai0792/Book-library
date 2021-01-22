@@ -23,11 +23,6 @@ Run `cd Book-library`<br>
 - Bootstrap
 - VScode
 
-## Live Demo
-
-[Live Demo Link](http://127.0.0.1:5500/index.html#)
-
-
 ## Authors
 
 👤 **Jyoti Rai**
