@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 const myLibrary = [];
 
@@ -11,15 +12,40 @@ function Book(title, author, pages, read) {
 
 // Displaying book to the UI
 function displayBook(book) {
+  if (myLibrary.length === 1) {
+    const tbl = document.getElementById('table');
+    const thead = document.createElement('thead');
+    const trow = document.createElement('tr');
+    const th1 = document.createElement('th');
+    th1.textContent = 'Title';
+    const th2 = document.createElement('th');
+    th2.textContent = 'Author';
+    const th3 = document.createElement('th');
+    th3.textContent = 'No. of pages';
+    const th4 = document.createElement('th');
+    th4.textContent = 'Update read status';
+    const th5 = document.createElement('th');
+    th5.textContent = 'Remove Book';
+    trow.appendChild(th1);
+    trow.appendChild(th2);
+    trow.appendChild(th3);
+    trow.appendChild(th4);
+    trow.appendChild(th5);
+    thead.appendChild(trow);
+    tbl.appendChild(thead);
+  }
+
   const list = document.querySelector('#book-list');
   const row = document.createElement('tr');
-  row.innerHTML = `
+  for (let i = 0; i < myLibrary.length; i = +1) {
+    row.innerHTML = `
       <td class="mx-4">${book.title}</td>
       <td class="mx-4">${book.author}</td>
       <td class="mx-4">${book.pages}</td>
       <td><a href="#" class="btn btn-primary mx-4" id="statusYes">${book.read}</a></td>
       <td><a href="#" class="btn btn-danger mx-4 delete">Remove</a></td>
       `;
+  }
   list.appendChild(row);
 }
 
@@ -38,7 +64,8 @@ function addBookToLibrary(e) {
   e.preventDefault();
   // Clearing the form input data after submit
   document.getElementById('form').reset();
-  myLibrary.forEach(displayBook(book));
+  // myLibrary.forEach(displayBook(book));
+  displayBook(book);
 }
 
 // Add book form display function
