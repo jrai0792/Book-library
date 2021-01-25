@@ -37,7 +37,7 @@ function displayBook(book) {
 
   const list = document.querySelector('#book-list');
   const row = document.createElement('tr');
-  for (let i = 0; i < myLibrary.length; i = +1) {
+  for (let i = 0; i < myLibrary.length; i += 1) {
     row.innerHTML = `
       <td class="mx-4">${book.title}</td>
       <td class="mx-4">${book.author}</td>
